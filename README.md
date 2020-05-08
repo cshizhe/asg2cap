@@ -12,7 +12,7 @@ Python 3 and PyTorch 1.3.
 git clone https://github.com/cshizhe/asg2cap.git
 cd asg2cap
 # clone caption evaluation codes
-git clone 
+git clone https://github.com/cshizhe/eval_cap.git
 export PYTHONPATH=$(pwd):${PYTHONPATH}
 ```
 
@@ -82,16 +82,23 @@ We will make the extracted features for MSCOCO and VisualGenome datasets availab
 We also provide pretrained models and codes to extract features on your own.
 
 - Global Image Feature: the last mean pooling feature of [ResNet101 pretrained on ImageNet](https://pytorch.org/docs/stable/torchvision/models.html)
+
 format: npy array, shape=(num_fts, dim_ft)
 corresponding to the order in data_split names
 
 - Region Image Feature: fc7 layer of [Faster-RCNN pretrained on VisualGenome](https://github.com/cshizhe/maskrcnn_benchmark)
+
 format: hdf5 files, "image_id".jpg.hdf5
+
   key: 'image_id'.jpg
+  
   attrs: {"image_w": int, "image_h": int, "boxes": 4d array (x1, y1, x2, y2)}
   
-  ## Result Visualization
-  ![Examples](figures/user_intention_examples.png)
+  
+## Result Visualization
+  
+![Examples](figures/user_intention_examples.png)
+  
   
 ## Citations
 If you use this code as part of any published research, we'd really appreciate it if you could cite the following paper:
@@ -103,6 +110,7 @@ If you use this code as part of any published research, we'd really appreciate i
   year={2020}
 }
 ```
+
 
 ## License
 
