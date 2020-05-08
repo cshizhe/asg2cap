@@ -78,8 +78,9 @@ word2int.json: {word: int}
 trn_names.npy, val_names.npy, tst_names.npy
 
 ### Features
-We will make the extracted features for MSCOCO and VisualGenome datasets available soon.
-We also provide pretrained models and codes to extract features on your own.
+Features for MSCOCO and VisualGenome datasets are available at [BaiduNetdisk](https://pan.baidu.com/s/1A1YS_ztPdIDz0ALgUo0qZg) (code: 6q32).
+
+We also provide pretrained models and codes to extract features for new images.
 
 - Global Image Feature: the last mean pooling feature of [ResNet101 pretrained on ImageNet](https://pytorch.org/docs/stable/torchvision/models.html)
 
