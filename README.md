@@ -82,7 +82,7 @@ Features for MSCOCO and VisualGenome datasets are available at [BaiduNetdisk](ht
 
 We also provide pretrained models and codes to extract features for new images.
 
-- Global Image Feature: the last mean pooling feature of [ResNet101 pretrained on ImageNet](https://pytorch.org/docs/stable/torchvision/models.html)
+- Global Image Feature: the last mean pooling feature of [ResNet101 pretrained on ImageNet](https://pytorch.org/vision/stable/models.html#table-of-all-available-classification-weights)
 
 format: npy array, shape=(num_fts, dim_ft)
 corresponding to the order in data_split names
